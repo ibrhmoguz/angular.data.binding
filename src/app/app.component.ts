@@ -23,4 +23,8 @@ export class AppComponent {
       content: serverData.serverContent
     });
   }
+
+  onServerRemove(){
+    this.serverElements.splice(0,1);
+  }
 }

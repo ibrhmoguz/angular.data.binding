@@ -3,9 +3,10 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
+      <button class="btn btn-danger" (click)="onServerRemove()">Remove server</button>
       <app-server-item *ngFor="let serverElement of serverElements" [srvElement]="serverElement">
           <p>
-              <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
+              <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement .content }}</strong>
               <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
             </p>
       </app-server-item>
